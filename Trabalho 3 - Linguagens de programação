@@ -1,0 +1,10 @@
+É possível observar que as linguages de programação possuem diferenças, como exemplo em sua tipagem. A Python possui uma tipagem mais dinâmica e com isso mais variáveis podem ser aplicadas a diversos tipos de dados durante a execução do programa, ao contrário do PHP que possui uma tipagem mais fraca onde suas variáveis não possuem a obrigatoriedade de serem declaradas com antecedência e podem ser modificadas ao longo de sua execução.   ao contrario da PHP que possui uma tipagem mais fraca. Outra diferença presentes entre estas duas linguagens de programação é a sintaxe, a estrutura do programa o da Python é limpa e certa, já a do PHP é mais
+flexível. Outra diferença é o ecossistema que estão presentes sendo o do Python é de forma padrão e o do PHP é amplo possuindo uma ampla gama, quantidade de framework, na qual são estruturas compostas por códigos que permitem o desenvolvimento de sistemas e aplicações.
+A última diferença entre estas duas linguagens de programação é o uso da linguagem, como é utilizada , pois a Python é utilizada em áreas de inteligência artificial, dados já o PHP é utilizado de forma ampla 
+especialmente na criação de sites interativos e dinâmicos.
+Há uma terceira forma de linguagem além das duas faladas acima, na qual é o SQL, a diferença deste sistema para os dois falados acima pode ser visto no objetivo de seu uso, pois a Python possui uma linguagem
+versátil utilizada para diversos contextos e o PHP possui como objetivo a criação de sites interativos e dinâmicos como falado acima, enquanto a SQL é utilizada para consultar banco de dados  
+Outra diferença que pode ser observada da SQL para as outras duas linguagens de programação é em relação ao seu ecossistema, que é composto de ferramentas e recursos para facilitar o trabalho dos profissionais de 
+tecnologia, diferente dos ecossistemas presentes na Pyton e na PHP e como última diferença da SQL em relação as outras duas linguagens de programação é que ela permite que os usuários que a acessam escrevam
+consultas complexas de forma mais eficiente, assim otimizando acesso e a manipulação dos dados.
+
