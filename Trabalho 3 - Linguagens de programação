@@ -8,3 +8,10 @@ Outra diferença que pode ser observada da SQL para as outras duas linguagens de
 tecnologia, diferente dos ecossistemas presentes na Pyton e na PHP e como última diferença da SQL em relação as outras duas linguagens de programação é que ela permite que os usuários que a acessam escrevam
 consultas complexas de forma mais eficiente, assim otimizando acesso e a manipulação dos dados.
 
+Códigos: 
+Insertion Sort - Python;
+echo "Hello world!\n"; - PHP;
+-- create a table - SQL
+
+
+
