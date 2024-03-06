@@ -1,0 +1,12 @@
+Estrutura código de repetição
+contador = 0
+while contador < 5:
+    print(contador)
+    contador = contador + 1
+
+
+Estrutura código tomada de decisão
+num = 5
+if num > 0:
+    print("O número é positivo")
+print("Esse valor é sempre impresso, pois está fora do bloco if")
