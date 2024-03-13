@@ -1,4 +1,4 @@
-Algoritmo buble sort usando pyton 
+- Algoritmo buble sort usando pyton 
 código def bubble_sort(list1): 
     # Outer loop for traverse the entire list 
     for i in range(0,len(list1)-1): 
@@ -14,7 +14,7 @@ print("The unsorted list is: ", list1)
 # Calling the bubble sort function 
 print("The sorted list is: ", bubble_sort(list1)) 
 
-Contagem de vogais algaritmo frase
+- Contagem de vogais algaritmo frase
 def Check_Vow(string, vowels): 
     final = [each for each in string if each in vowels] 
     print(len(final)) 
