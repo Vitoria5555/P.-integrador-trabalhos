@@ -31,23 +31,21 @@ palavra= "direito"
 len(palavra)
 print("a palavra é", palavra)
 
-frase="Hoje vou estudar direito amanhã"
+frase=" vou estudar direito amanhã"
 print ("quantidade de espaços em branco da frase", frase)
 frase.count(' ')
 print ("quantidade",frase.count(''))
 
-Resultado    
+Resultado py
 A média é 7.0
 o quadrado é 25
 o dobrp é 12
 o segundo número é maior que o primeiro False
 o maior número é 10
 a palavra é direito
-quantidade de espaços em branco da frase Hoje vou estudar direito
-quantidade 25
+quantidade de espaços em branco da frase  vou estudar direito amanhã
+quantidade 28
 
 
-** Process exited - Return Code: 0 **
-Press Enter to exit terminal
 
 
