@@ -1,1 +1,53 @@
+PY Algaritmo
+a=9
+b=7
+soma= a+b
+suntração=a-b
+multiplicação= a*b
+divisão= a/b
+frase= "Tudo é nada"
+
+x=5
+y=6
+z=7
+h=10
+
+média=(x + y + z+ h) / 4
+print ("A média é", média)
+
+quadrado= x* x
+print ("o quadrado é", quadrado)
+
+dobro= y * 2
+print ( "o dobrp é", dobro)
+
+números= x>y
+print( "o segundo número é maior que o primeiro", números)
+
+maior= max (x,y,z,h)
+print ("o maior número é", maior)
+
+palavra= "direito"
+len(palavra)
+print("a palavra é", palavra)
+
+frase="Hoje vou estudar direito amanhã"
+print ("quantidade de espaços em branco da frase", frase)
+frase.count(' ')
+print ("quantidade",frase.count(''))
+
+Resultado    
+A média é 7.0
+o quadrado é 25
+o dobrp é 12
+o segundo número é maior que o primeiro False
+o maior número é 10
+a palavra é direito
+quantidade de espaços em branco da frase Hoje vou estudar direito
+quantidade 25
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
 
