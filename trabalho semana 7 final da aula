@@ -15,4 +15,17 @@ def fun3 (x):
         print("*" * i)
 
 
+Resultado:
+exer1 
+as frutas são banana, uva e maça;
+fun2
+[ 'banana', ' morango', 'banana']
+fun3
+['banana', 'morango','banana']
+   *
+  ***
+ *****
+*******
+
+
 
