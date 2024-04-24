@@ -1,0 +1,77 @@
+print ( "olá", "mundo", sep="-")
+
+print ( "olá", "python", end="!/n")
+
+print("18","04","2023", sep="/")
+
+print("nome","sobrenome","email",sep=";")
+
+print ("loading", end="  ")
+print("[ok]")
+
+nome = input ( "Entre com o seu  nome: ")
+print ( "olá", "Vitória")
+
+itens= input("Digite itens separados por vírgula").split(',')
+print("itens" ,itens)
+
+idade= input( "me diga sua idade:")
+idade= int ( idade)
+
+print(" daqui a cinco anos, voce terá", idade + 5, "anos.")
+
+print ( "Digite números para adicionar a lista ( digite 'done' para terminar):")
+numeros= []
+while True:
+    entrada= input()
+    if entrada.lower()== 'done':
+        break
+    else:
+        numeros.append(int(entrada))
+    print(" Números coletados:", numeros)
+    
+Resultados: 
+olá-mundo
+olá python!/n18/04/2023
+nome;sobrenome;email
+loading  [ok]
+
+=========== RESTART: C:/Users/202101297814/Desktop/exemplo python.py ===========
+olá-mundo
+olá python!/n18/04/2023
+nome;sobrenome;email
+loading  [ok]
+Vitória
+=========== RESTART: C:/Users/202101297814/Desktop/exemplo python.py ===========
+olá-mundo
+olá python!/n18/04/2023
+nome;sobrenome;email
+loading  [ok]
+Vitória
+lá-mundo
+olá python!/n18/04/2023
+nome;sobrenome;email
+loading  [ok]
+Entre com o seu  nome: Vitória
+olá Vitória
+Digite itens separados por vírgula banana, maça, uva
+itens [' banana', ' maça', ' uva']
+
+=========== RESTART: C:/Users/202101297814/Desktop/exemplo python.py ===========
+olá-mundo
+olá python!/n18/04/2023
+nome;sobrenome;email
+loading  [ok]
+Entre com o seu  nome: vitória
+olá Vitória
+Digite itens separados por vírgula banana, maça, uva
+itens [' banana', ' maça', ' uva']
+me diga sua idade: 22
+ daqui a cinco anos, voce terá 27 anos.
+
+======= RESTART: C:/Users/202101297814/Desktop/exemplo python parte 2.py =======
+Digite números para adicionar a lista ( digite 'done' para terminar):
+1
+2
+3
+done
