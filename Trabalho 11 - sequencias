@@ -15,4 +15,7 @@ def a_bombom (dinheiro, preço):
 Resultado:
 
 a_bombom (10,3)  
+2
+
 a_bombom (20,3)
+1
