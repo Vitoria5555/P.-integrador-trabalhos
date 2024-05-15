@@ -14,5 +14,5 @@ def a_bombom (dinheiro, preço):
      return preço - troco 
 Resultado:
 
-a_bombons (10,3)  
-a_bombons (20,3)
+a_bombom (10,3)  
+a_bombom (20,3)
