@@ -5,80 +5,42 @@ def gravar_nome_em_arquivo():
 
     # Abrir o arquivo em modo de escrita ('w')
     try:
-        with open("nome.txt", "w") as arquivo:
-            # Gravar o nome informado pelo usuário no arquivo
-            arquivo.write(nome)
-        print("Nome gravado com sucesso no arquivo 'nome.txt'!")
-    except IOError:
-        print("Erro ao gravar o nome no arquivo.")
-
-# Chamada da função para pedir o nome e gravá-lo em um arquivo
-gravar_nome_em_arquivo()
+        with open('nome.txt', "w") 
+        f.write (nome)
+        f.close ()
+           
 
 questão 2
 def imprimir_conteudo_arquivo():
-    # Pedir ao usuário o nome do arquivo de texto
-    nome_arquivo = input("Por favor, informe o nome do arquivo de texto: ")
 
-    # Abrir o arquivo em modo de leitura ('r')
-    with open(nome_arquivo, "r") as arquivo:
-        # Ler o conteúdo do arquivo e imprimir
-        conteudo = arquivo.read()
-        print("Conteúdo do arquivo:")
-        print(conteudo)
+    arq = input("Por favor, informe o nome do arquivo de texto: ")
+     f= open ( arq, 'r')
+     print (f.read() )
+    f.close()
 
 questão 3
 def copiar_conteudo_para_novo_arquivo(nome_arquivo_origem, nome_arquivo_destino):
     try:
-        # Abrir o arquivo de origem em modo de leitura ('r')
+     
         with open(nome_arquivo_origem, "r") as arquivo_origem:
-            # Ler o conteúdo do arquivo de origem
-            conteudo = arquivo_origem.read()
-            
-            # Abrir o arquivo de destino em modo de escrita ('w')
-            with open(nome_arquivo_destino, "w") as arquivo_destino:
-                # Escrever o conteúdo lido no arquivo de destino
-                arquivo_destino.write(conteudo)
+         f1= open ('arquivo-exemplo.txt','r')
+         f2= open ('novo-arquivo.txt','w')
+         f2.write (f1.read() )
+         f1.close()
+         f2.close()
+       
         
-        print(f"O conteúdo do arquivo '{nome_arquivo_origem}' foi copiado para '{nome_arquivo_destino}' com sucesso.")
-    except FileNotFoundError:
-        print("O arquivo de origem não foi encontrado.")
-    except IOError:
-        print("Erro ao ler ou escrever nos arquivos.")
 
-# Chamada da função
-nome_arquivo_origem = input("Informe o nome do arquivo de origem: ")
-nome_arquivo_destino = input("Informe o nome do arquivo de destino: ")
-copiar_conteudo_para_novo_arquivo(nome_arquivo_origem, nome_arquivo_destino)
 
 questão 4
 def encontrar_nome_por_numero(numero):
-    try:
-        # Abrir o arquivo de exemplo em modo de leitura ('r')
-        with open("exemplo.txt", "r") as arquivo:
-            # Ler todas as linhas do arquivo
-            linhas = arquivo.readlines()
-            
-            # Iterar sobre as linhas do arquivo
-            for linha in linhas:
-                # Dividir a linha em número e nome
-                num, nome = linha.strip().split(":")
-                
-                # Verificar se o número corresponde ao fornecido pelo usuário
-                if num == numero:
-                    print(f"Nome correspondente ao número {numero}: {nome}")
-                    return
-                
-            print(f"Nenhum nome correspondente ao número {numero} foi encontrado.")
-    except FileNotFoundError:
-        print("O arquivo de exemplo não foi encontrado.")
-    except IOError:
-        print("Erro ao ler o arquivo.")
-
-
-numero = input("Por favor, informe um número: ")
-
-encontrar_nome_por_numero(numero)
+    
+  f = open('exemplo.txt', 'r') 
+  numero = imput ('entre com o numero:')
+  for linha in f:
+      partes = linha.split (';')
+      if partes (O) == numero:
+         primt(partes(1) )
 
 Resultados:
 
