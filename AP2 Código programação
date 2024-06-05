@@ -1,2 +1,72 @@
 
+with open('registro.csv', 'w', newline='') as csvfile :
+    writer = 'registro.csv'
+   
+print ("Arquivo de registro 'registro.csv' criado com sucesso.")
+import csv
+# Função para carregar os dados do arquivo CSV
+def carregar_dados():
+    dados = []
+    with open('registro.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            row['Caso'] = int(row['Caso'])
+            row['Despesa'] = float(row['Despesa'])
+            row['Receita'] = float(row['Receita'])
+            dados.append(row)
+    return dados
 
+# Função para exibir o menu
+def exibir_menu():
+    print("\nMenu:")
+    print("1. Buscar nomes de clientes por parte do nome")
+    print("2. Buscar números de casos por nome completo do cliente")
+    print("3. Buscar detalhes por número de caso")
+    print("4. Estatísticas gerais")
+    print("5. Gravar detalhes de cliente em arquivo")
+    print("6. Sair")
+
+# Função para buscar nomes de clientes por parte do nome
+def buscar_nomes_por_parte(dados):
+    parte_nome = input("Digite parte do nome do cliente: ").strip().lower()
+    nomes_encontrados = set(row['Cliente'] for row in dados if parte_nome in row['Cliente'].lower())
+    
+    if nomes_encontrados:
+        print("Clientes encontrados:")
+        for nome in nomes_encontrados:
+            print(f"  {nome}")
+    else:
+        print(f"Nenhum cliente encontrado com '{parte_nome}' no nome.")
+
+# Função para buscar números de casos por nome completo do cliente
+def buscar_casos_por_nome(dados):
+    nome_completo = input("Digite o nome completo do cliente: ").strip()
+    casos_encontrados = [row['Caso'] for row in dados if row['Cliente'] == nome_completo]
+    
+    if casos_encontrados:
+        print(f"Casos encontrados para o cliente {nome_completo}:")
+        for caso in casos_encontrados:
+            print(f"  Caso {caso}")
+    else:
+        print(f"Nenhum caso encontrado para o cliente {nome_completo}.")
+
+# Função para buscar detalhes por número de caso
+def buscar_detalhes_por_caso(dados):
+    numero_caso = int(input("Digite o número do caso: "))
+    caso_encontrado = next((row for row in dados if row['Caso'] == numero_caso), None)
+    
+    if caso_encontrado:
+        despesa = caso_encontrado['Despesa']
+        receita = caso_encontrado['Receita']
+        diferenca = receita - despesa
+        print(f"Detalhes do caso {numero_caso}:")
+        print(f"  Nome do cliente: {caso_encontrado['Cliente']}")
+        print(f"  Despesa: {despesa}")
+        print(f"  Receita: {receita}")
+        print(f"  Diferença (Receita - Despesa): {diferenca}")
+    else:
+        print(f"Nenhum caso encontrado com o número {numero_caso}.")
+
+# Função para calcular estatísticas gerais
+def estatisticas_gerais(dados):
+    total_despesa 
